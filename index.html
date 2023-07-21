@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.js"
+      integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+      crossorigin="anonymous"></script>
+
+    <script src="crypto-js-aes.js"></script>
+    <script src="main.js"></script>
+
+    <title>Text Encryptisfon using JavaScript</title>
+  </head>
+  <body>
+    <br>
+    <br>
+    <br>
+    <br><br><br><br>
+    <!---->
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title is-centered">Encrypt and Decrypt Text Data <!--with Crypto-JS--></h1>
+        <br>
+
+        <div class="columns">
+          <div class="column">
+            <div class="box">
+              <form id="encrypt-set">
+                <div class="field">
+                  <label class="label">Plain string to encrypt</label>
+                  <div class="control">
+                    <input class="input input-string" id="encrypt-plain-string" type="text" placeholder="Plain string">
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Password to encode string with</label>
+                  <div class="control">
+                    <input class="input input-string" id="encrypt-password" type="password" placeholder="Password">
+                  </div>
+                  <div class="control">
+                    <input class="" id="" type="checkbox" onclick="myFunction()">
+                    <label for="">Show Password</label>
+                  </div>
+                </div>
+
+                <div class="field is-grouped">
+                  <p class="control">
+                    <input id="encrypt-submit" type="submit" value="Encrypt" class="button is-primary">
+                  </p>
+
+                  <p class="control">
+                    <input type="submit" value="Clear" class="clear-form button is-light">
+                  </p>
+                </div>
+              </form>
+
+              <div class="result encryption-result-section notification">
+                <h3 class="subtitle" style="color:rgba(0, 0, 0, 0.74) ;">Encrypted string</h3>
+                <p id="encrypted-result" class="result-section"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="box">
+              <form id="decrypt-set">
+                <div class="field">
+                  <label class="label">Encrypted string to decrypt</label>
+                  <div class="control">
+                    <input class="input input-string" id="decrypt-plain-string" type="text" placeholder="Encrypted string">
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Password to encode string with</label>
+                  <div class="control">
+                    <input class="input input-string" id="decrypt-password" type="password" placeholder="Password">
+                  </div>
+                  <div class="control">
+                    <input class="" id="" type="checkbox" onclick="myFunction1()">
+                    <label for="">Show Password</label>
+                  </div>
+                </div>
+
+                <div class="field is-grouped">
+                  <p class="control">
+                    <input id="decrypt-submit" type="submit" value="Decrypt" class="button is-primary">
+                  </p>
+
+                  <p class="control">
+                    <input type="submit" value="Clear" class="clear-form button is-light">
+                  </p>
+                </div>
+              </form>
+
+              <div class="result decryption-result-section notification">
+                <h3 class="subtitle" style="color:rgba(0, 0, 0, 0.74) ;">Decrypted string</h3>
+                <span id="decrypted-result" class="result-section"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ 
+
+    <!-- <footer class="footer" style="background-color:#AEAEAE;">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p id="foot">
+            <strong>encrypt-text-data-with-javascript</strong>.
+          </p>
+          
+        </div>
+      </div>
+    </footer> -->
+
+  </body>
+</html>

@@ -1,0 +1,58 @@
+.notification {
+    margin-top: 30px;
+    padding: 1.25rem 1.5rem;
+  }
+  
+  @media screen and (min-width: 769px) {
+    .column { min-width: 47%; }
+  }
+  
+  .title, .subtitle {
+    text-align: center;
+  }
+  
+  p {
+    word-wrap: break-word;
+  }
+
+  body{
+    /* background-color: #AEAEAE; */
+    /* background-color: #DEF5E5; */
+    background-color: #f8cb74;
+    height: 1080px;
+  }
+  h1,h3.subtitle{
+    font-family: 'Press Start 2P', cursive;
+    
+  }
+
+  label.label{
+    font-family: monospace;
+    color: wheat;
+
+  }
+
+  /* #encrypt-password.input.input-string,#decrypt-password.input.input-string,#encrypt-plain-string.input.input-string,#decrypt-plain-string.input.input-string,#foot{
+    font-family: 'La Belle Aurore', cursive;
+  } */
+ 
+  div.box{
+    background-color: rgb(0 0 0 / 50%);
+    color: wheat;
+  }
+
+  .button.is-primary{
+    background-color: #000000;
+  }
+  .button.is-primary:hover{
+    background-color: #3d3d3d;
+  }
+
+  .notification.is-primary {
+    background-color: #5ba74f;
+    color: rgb(255, 255, 255);
+}
+.notification.is-info {
+  background-color: #5a86cd;
+  color: white;
+}
